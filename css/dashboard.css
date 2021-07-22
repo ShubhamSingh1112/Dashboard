@@ -1,0 +1,531 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: #e1e1e1;
+    overflow-x: hidden;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.v-center {
+    align-items: center;
+}
+
+.h-center {
+    justify-content: center;
+}
+
+.h-btw {
+    justify-content: space-between;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.container2 {
+    width: 90%;
+    margin: auto;
+}
+
+a {
+    color: gray;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0px 10px 0px 10px;
+    background-color: #fff;
+    box-shadow: 0px 8px 17px 1px rgb(0 0 0 / 20%);
+}
+
+.nav {
+    justify-content: space-between;
+}
+
+.modes {
+    border: 1px solid lightgray;
+    color: gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.modes i {
+    margin-left: 5px;
+}
+
+.fa-mobile-alt {
+    padding: 2.5px 5px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+}
+
+.fa-desktop {
+    padding: 5.5px 5px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+}
+
+/* sidebar */
+
+#btn {
+    transition: transform 0.3 ease-in-out;
+    border: 1px solid lightgray;
+}
+
+.sidebar-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85px;
+    height: 100%;
+    padding: 5px;
+    background: rgb(248, 248, 248);
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.sidebar {
+    position: relative;
+}
+
+.side-nav {
+    position: relative;
+    list-style-type: none;
+}
+
+.side-nav li {
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.side-nav li a {
+    text-decoration: none;
+}
+
+.side-nav li a i {
+    font-size: 30px;
+}
+
+.sidenav-active {
+    border: 2px solid rgb(117, 10, 117);
+    border-radius: 5px;
+}
+
+.sidenav-active a {
+    color: rgb(117, 10, 117);
+}
+
+/* profilebar */
+
+.profilebar-container {
+    position: absolute;
+    width: 60px;
+    right: 0px;
+    top: 0;
+    height: 100%;
+    background: rgb(248, 248, 248);
+    box-shadow: -4px 15px 18px 0.5px rgb(0 0 0 / 20%);
+}
+
+.profilebar-container:hover {
+    right: 0px;
+    transition: 0.3s ease-out;
+}
+
+.options {
+    list-style: none;
+    font-size: 30px;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.profile-icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.online {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgb(197, 9, 197);
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.profile-icon img {
+    width : 100%;
+    height: auto;
+}
+
+.notification-icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.notification {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    background-color: rgb(197, 9, 197);
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.messages-icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.messages {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    background-color: rgb(197, 9, 197);
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.card {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    min-height: 600px;
+    border-radius: 10px;
+    border: 1px solid #d1d1d1;
+    box-shadow: 2px 2px 4px 4px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+.close-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.fa-times {
+    padding: 5px 7px;
+    color: #bbbbbb;
+    border-radius: 50%;
+    border: 2px solid #bbbbbb;
+}
+
+
+/* Style the tab */
+
+.tabsheading {
+    border-bottom: 4px solid #e1e1e1;
+    padding: 20px;
+    font-size: 20px;
+    color: #bbbbbb;
+}
+
+.tab {
+  float: left;
+  width: 20%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: rgb(37, 37, 37);
+  padding: 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgb(236, 236, 236);
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    border-left: 5px solid rgb(117, 10, 117);
+    background-color: rgb(235, 233, 233);
+    border-radius: 5px;
+    color: rgb(117, 10, 117)
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 80%;
+  border-left: 1px solid rgb(221, 221, 221);
+  min-height: 100%;
+}
+
+
+/* accordion */
+.accordion {
+    background:rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 5px 20px 5px 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+  
+.aactive, .accordion:hover {
+    background-color: rgb(247, 247, 247);
+}
+  
+.accordion:after {
+    content: "\2228";
+    color: rgb(117, 10, 117);
+    font-weight: bold;
+    font-size: 20px;
+    float: right;
+    margin-left: 25px;
+}
+  
+.aactive:after {
+    content: "\2227";
+}
+
+.accordion h2 {
+    color: rgb(37, 37, 37);
+}
+  
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+  /* Switch inputs */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 10px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    border-radius: 50%;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: rgb(31, 231, 81)!important;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px rgb(31, 231, 81)!important;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+}
+
+.column {
+    width: 50%;
+}
+
+/* features */
+
+.qna {
+    list-style: none;
+}
+
+.qna li {
+    padding: 10px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    margin-bottom: 5px;
+}
+
+.qna li h5 {
+    font-size: 15px;
+    color: #1b1b1b;
+    margin-bottom: 5px;
+}
+
+.qna li p {
+    font-size: 10px;
+    color: #cccccc;
+    margin-bottom: 5px;
+}
+
+.select-no {
+    display: flex;
+}
+
+.btn-ql {
+    background-color: inherit;
+    color: rgb(37, 37, 37);
+    padding: 10px;
+    width: 80px;
+    border: 1px solid rgb(117, 10, 117);
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+.btn-ql:hover {
+    background-color: rgb(117, 10, 117);
+    color: #fff;
+}
+
+.btn-ql:focus {
+    background-color: rgb(117, 10, 117);
+    color: #fff;
+}
+
+
+@media screen and (max-width:768px) {
+    .container {
+        width: 96%;
+    }
+    .tab button {
+        padding: 5px;font-size: 12px
+    }
+    .sidebar-container {
+        position:absolute; left:-90px
+    }
+    .profilebar-container {
+        right: -50px;
+        z-index: 999;
+    }
+    
+    .profilebar-container:hover {
+        right: 0px;
+        transition: 0.3s ease-out;
+    }
+}
+
+.save {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background: rgb(117, 10, 117);
+    color: #fff;
+    padding: 10px 25px;
+    border: 0;
+    border-radius: 5px;
+    float: right;
+}
+
+/* sidenav */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+      text-decoration: none;
+  }
+  
+  .sidenav a:hover {
+    color: #d400b1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .sidenav-btn {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 8px;
+    line-height: 1.5;
+    cursor: pointer;
+    z-index: 999;
+  }

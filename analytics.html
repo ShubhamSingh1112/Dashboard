@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/dashboard.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container2 d-flex nav">
+        <div class="d-flex">
+          <h3 style="margin-top: 10px"> ADMIN DASHBOARD</h3>
+        </div>
+        <div class="modes d-flex v-center">
+          <p>Preview On:</p>
+          <i class="fas fa-mobile-alt"></i>
+          <i class="fas fa-desktop"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div class="sidenav-btn bg-warning">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a class="" href="#">
+        <img src="img/icon.png" width="100%" height="auto" alt="img">
+      </a>
+      <ul class="side-nav">
+        <li class="">
+          <a href="event.html">
+            <i class="fas fa-poll"></i>
+            <br />
+            <p>Event</p>
+          </a>
+        </li>
+        <li class="">
+          <a href="index.html">
+            <i class="fas fa-users"></i>
+            <br />
+            <p>Terms</p>
+          </a>
+        </li>
+        <li class="sidenav-active">
+          <a href="analytics.html">
+            <i class="fas fa-chart-line"></i>
+            <br />
+            <p>Analytics</p>
+          </a>
+        </li>
+        <li class="">
+          <a href="event.html">
+            <i class="fas fa-envelope-open-text"></i>
+            <br />
+            <p>Results</p>
+          </a>
+        </li>
+      </ul>      
+    </div>
+      
+    <div class="profilebar-container">
+      <div class="profilebar">
+        <ul class="options">
+          <li class="profile-icon">
+            <a href="event.html">
+              <img src="img/profileimg.jpg" alt="img" />
+            </a>
+            <span class="online"></span>
+          </li>
+          <li class="notification-icon">
+            <a href="event.html">
+              <i class="far fa-bell"></i>
+              <span class="notification"></span>
+            </a>
+          </li>
+          <li class="messages-icon">
+            <a href="event.html">
+              <i class="fas fa-comments"></i>
+              <span class="messages"></span>
+            </a>
+          </li>
+          <li class="">
+            <a href="event.html">
+              <i class="fas fa-cog"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <h2>Error 404</h2>
+        <p>This page does not exist</p>
+      </div>
+    </div>
+
+    <div></div>
+
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>
